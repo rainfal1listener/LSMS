@@ -1,0 +1,33 @@
+/* pages/seachHistory/seachHistory.wxss */
+.weui-cell-list{
+  margin: 5px 50px 5px 50px;
+}
+.weui-cell-line{
+/* width: 100px; */
+margin-left: 5px;
+  border-left: 1px solid #ddd;
+  height: 100px; 
+  background: #fff
+}
+.weui-cell-circle{
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  background-color:#6ecb9f;
+}
+.time{
+  float: left;
+  font-size:14px;
+  padding-top: 0px;
+  padding-left: 0px;
+  width: 500px;
+  margin-top:-28rpx;
+  margin-left:20rpx;
+}
+.room{
+  padding-top: 15px;
+  padding-left: 0px;
+  font-size:15px;
+  margin-left:20rpx;
+}
+

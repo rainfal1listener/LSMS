@@ -1,0 +1,50 @@
+<!--miniprogram/pages/adminHome/adminHome.wxml-->
+
+<!-- <view class="user">
+
+  <view class="user-info">
+    <image  src="{{userPhoto}}"></image>
+    <text> 管理员：{{nickName}}</text>
+  </view>
+
+  <van-dialog id="van-dialog" />
+  <van-toast id="van-toast" />
+  
+</view>
+  <view class="func">
+    <view class="block">
+      <van-cell is-link title="用户管理" link-type="navigateTo" url="/pages/userManage/userManage" />
+      <van-cell is-link title="座位管理" link-type="navigateTo" url="/pages/seatManage/seatManage"/>
+      <van-cell is-link title="阅览室管理" link-type="navigateTo" url="/pages/openTimeManage/openTimeManage" />
+      <van-cell is-link title="举报处理" link-type="navigateTo" url="/pages/dealReport/dealReport"/>
+    </view>
+</view> -->
+<view class="bottom">
+  <van-grid clickable column-num="3">
+    <van-grid-item
+      icon="home-o"
+      link-type="navigateTo"
+      url="/pages/openTimeManage/openTimeManage"
+      text="阅览室"
+      clickable="true"
+    />
+    <van-grid-item
+      icon="friends-o"
+      link-type="navigateTo"
+      url="/pages/userManage/userManage"
+      text="举报处理"
+      clickable="true"
+    />
+    <view class="act">
+      <van-grid-item
+      icon="label-o"
+      link-type="navigateTo"
+      url="/pages/dealReport/dealReport"
+      text="举报记录处理"
+      info="8"
+      clickable="true"
+      />
+    </view>  
+
+  </van-grid>
+</view>

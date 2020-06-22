@@ -1,0 +1,5 @@
+/* pages/rooms/rooms.wxss */
+.main button{
+  margin-top: 30rpx;
+}
+.messageTop{margin-left: 40rpx; margin-top:20rpx;margin-bottom: 60rpx;color:#737373;}

@@ -1,0 +1,39 @@
+<!--pages/report/report.wxml-->
+<text class="itd">现在发现违规操作，请马上填入举报信息向管理员举报：</text>
+<view class="main">
+  <van-cell-group>
+    <van-field
+      value="{{ rooms }}"
+      required
+      clearable
+      label="房间"
+      placeholder="第一自习室"
+      bind:change="onChange1"
+    />
+      <van-field
+      value="{{ seats }}"
+      required
+      clearable
+      label="座位号"
+      placeholder="001"
+       bind:change="onChange2"
+    />
+      <van-field
+      value="{{ note }}"
+      clearable
+      label="说明（可选）"
+      icon="question-o"
+      placeholder="可以提供补充说明"
+      bind:change="onChange3"
+    />
+  </van-cell-group>
+  <van-dropdown-menu>
+    <van-dropdown-item value="{{ value1 }}" options="{{ option1 }}"  checked="{{ switch2 }}" />
+    <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)" bindtap="submit">确定举报</van-button>
+</van-dropdown-menu>
+</view>
+<view class="bottom" bindtap="cScoreTip">
+    <text class="itd">感谢您为图书馆尽的一份力！您的监督有利于维护图书馆的秩序！如果情况属实系会为你加<text class="cScoreIfom" >10信用分</text>哦~</text>
+</view>
+<van-dialog id="van-dialog" />
+

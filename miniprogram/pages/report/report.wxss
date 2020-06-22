@@ -1,0 +1,25 @@
+/* pages/report/report.wxss */
+.t{
+  display: flex;
+  width:100%;
+  padding-top: 30rpx;
+  height: 60rpx;
+}
+.typeText{
+  width: 50%;
+  height: 50px;
+}
+.dec{
+  font-size: 30rpx;
+  margin-bottom: 0rpx;
+}
+.bottom{position:fixed; bottom:0;width:100%;text-align: center;
+font-size: 40rpx; }
+.itd{
+  margin-top:40rpx;margin-bottom: 50rpx;color:#737373;font-size: 30rpx;
+}
+.main{
+  margin-top: 100rpx;
+  margin-bottom: 40rpx;
+}
+.cScoreIfom{color:#6ecb9f;text-decoration-line: underline;}

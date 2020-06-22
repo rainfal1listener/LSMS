@@ -1,0 +1,6 @@
+<!--pages/adminMain/adminMain.wxml-->
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item icon="home-o">阅览室管理</van-tabbar-item>
+  <van-tabbar-item icon="friends-o">用户管理</van-tabbar-item>
+    <van-tabbar-item icon="label-o"  info="5">举报记录处理</van-tabbar-item>
+</van-tabbar>

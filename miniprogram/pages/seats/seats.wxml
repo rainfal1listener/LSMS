@@ -1,0 +1,149 @@
+<view class="seatStatusList">
+  <image class="seat" src="/images/seats/noOrder.png"></image>可选座位
+  <image class="seat" src="/images/seats/isOrder.png"></image>被订座位
+  <image class="seat" src="/images/seats/chazuo.png"></image>插座
+</view>
+
+<van-divider />
+
+<view class="msg">{{selectedRoomName}}</view>
+<view class="msg">{{selectedTime}}</view>
+
+<view class="seatList">
+
+  <view class="block" wx:for="{{seat}}" >
+    <!-- <image bindtap="{{item.type=='noOrder'?'choose':''}}" class="{{item.num==chooseNum?'selected':'seat'}}" 
+    src="{{timeType==item.userTime?'/images/seats/isOrder.png':'/images/seats/{{item.type}}.png'}}" data-choosenum="{{item.num}}"></image> -->
+    <image wx:if="{{item.type=='chazuo'}}" bindtap="" class="{{item.num==chooseNum?'selected':'seat'}}" 
+    src='/images/seats/chazuo.png' data-choosenum="{{item.num}}"></image>
+
+    <image wx:elif="{{item.type=='empty'}}" bindtap="" class="{{item.num==chooseNum?'selected':'seat'}}" 
+    src='/images/seats/empty.png' data-choosenum="{{item.num}}"></image>
+
+  <image wx:elif="{{item.type=='noOrder'&&item.orderTime1==timeType}}" bindtap="" class="{{item.num==chooseNum?'selected':'seat'}}" 
+    src='/images/seats/isOrder.png' data-choosenum="{{item.num}}"></image>
+    <image wx:elif="{{item.type=='noOrder'&&item.orderTime2==timeType}}" bindtap="" class="{{item.num==chooseNum?'selected':'seat'}}" 
+    src='/images/seats/isOrder.png' data-choosenum="{{item.num}}"></image>
+    <image wx:elif="{{item.type=='noOrder'&&item.orderTime3==timeType}}" bindtap="" class="{{item.num==chooseNum?'selected':'seat'}}" 
+    src='/images/seats/isOrder.png' data-choosenum="{{item.num}}"></image>
+  
+  <image wx:else bindtap='choose' class="{{item.num==chooseNum?'selected':'seat'}}" 
+    src='/images/seats/noOrder.png' data-choosenum="{{item.num}}"></image>
+  </view>
+
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/chazuo.png' class="seat"></image></view>
+
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+
+   <view class="block"><image src='/images/seats/chazuo.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/chazuo.png' class="seat"></image></view>
+     <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+
+   <view class="block"><image src='/images/seats/chazuo.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/chazuo.png' class="seat"></image></view>
+     <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+
+   <view class="block"><image src='/images/seats/chazuo.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/chazuo.png' class="seat"></image></view>
+     <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+
+   <view class="block"><image src='/images/seats/chazuo.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/empty.png' class="seat"></image></view>
+   <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/isOrder.png' class="seat"></image></view>
+  <view class="block"><image src='/images/seats/chazuo.png' class="seat"></image></view>
+
+
+  
+   
+
+
+
+  
+
+</view>
+<view class="bottom">
+  <view class="snum">
+  选座的座位号:{{chooseNum}}
+  </view>
+  <van-button type="primary" color="#6ecb9f" bindtap="order">确认</van-button>
+</view>
+<van-dialog id="van-dialog" />
+<van-toast id="van-toast" />

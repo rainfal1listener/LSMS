@@ -1,0 +1,89 @@
+<!--pages/openTimeManage/openTimeManage.wxml-->
+<van-collapse value="{{ activeNames }}" bind:change="onChanges" class="main" accordion>
+  <van-collapse-item wx:for="{{rooms}}" title="{{item.name}}" name="{{item._id}}" data-roomid="{{item._id}}" bindtap='tap' >
+  <!-- data-one="{{item.time1}}" data-two="{{item.time2}}" data-three="{{item.time3}}" data-status="{{item.openStatus}}" -->
+  <van-cell title="开放状态">
+  <van-switch checked="{{ status }}" size="24px" bind:change="switch" />
+</van-cell>
+  <van-cell-group>
+    <van-field
+      value="{{ time1 }}"
+
+      clearable
+      label="上午开放时间："
+      placeholder="{{item.time1}}"
+      bind:change="onChange1"
+    />
+      <van-field
+      value="{{ time2 }}"
+
+      clearable
+      label="下午开放时间："
+      placeholder="{{item.time2}}"
+       bind:change="onChange2"
+    />
+      <van-field
+      value="{{ time3 }}"
+      clearable
+      label="晚上开放时间："
+      placeholder="{{item.time3}}"
+      bind:change="onChange3"
+    />
+    <view class="right">
+    
+    </view>
+    <view class="right">
+  <van-button color="linear-gradient(to right, #4bb0ff, #6149f6)" bindtap="summit">确定修改开放时间</van-button>
+</view>
+  </van-cell-group>
+  </van-collapse-item>
+</van-collapse>
+
+<van-dialog id="van-dialog"/>
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item>
+    <image
+      slot="icon"
+      src="/images/admin/room_active.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    <image
+      slot="icon-active"
+      src="/images/admin/room_active.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    阅览室管理
+  </van-tabbar-item>
+  <van-tabbar-item >
+    <image
+      slot="icon"
+      src="/images/admin/user.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    <image
+      slot="icon-active"
+      src="/images/admin/user_active.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    用户管理
+  </van-tabbar-item>
+  <van-tabbar-item info="{{undealReportNum}}">
+    <image
+      slot="icon"
+      src="/images/admin/report.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    <image
+      slot="icon-active"
+      src="/images/admin/report_active.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    举报处理
+  </van-tabbar-item>
+</van-tabbar>

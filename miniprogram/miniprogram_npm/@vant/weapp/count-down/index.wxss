@@ -1,0 +1,1 @@
+@import '../common/index.wxss';.van-count-down{color:#737373;color:var(--count-down-text-color,#737373);font-size:100rpx;font-size:var(--count-down-font-size,100rpx);line-height:100rpx;line-height:var(--count-down-line-height,190rpx);}

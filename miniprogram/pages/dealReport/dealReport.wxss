@@ -1,0 +1,19 @@
+/* pages/dealReport/dealReport.wxss */
+page{
+  height: 100%;
+  background-color:rgb(239, 245, 250);
+  background-image: url('https://pic4.zhimg.com/80/v2-1f1c2af82c699e23c49bd72e03196726_720w.jpg')
+}
+.top{
+  display: flex;
+  width: 100%;
+}
+.van-cell{
+  opacity: 0.8; 
+}
+.left{
+  width: 60%;
+}
+.right{
+  width: 50%;
+}

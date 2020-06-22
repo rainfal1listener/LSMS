@@ -1,0 +1,67 @@
+/* miniprogram/pages/user/user.wxss */
+page{
+  height: 100%;
+  background-color:rgb(239, 245, 250);
+  background-image: url('https://pic4.zhimg.com/80/v2-1f1c2af82c699e23c49bd72e03196726_720w.jpg')
+}
+.van-cell{
+  opacity: 0.7;  
+}
+.all{
+  height: 100%;
+  background-color:rgb(239, 245, 250);
+}
+.btnV{
+  margin-left: 23%;
+  text-align: center;
+}
+.btn{background-color: #6ecb9f; text-align: center;color:white;}
+.name{
+  margin-left: 40rpx;
+  color: whitesmoke;
+}
+.user-info{height: 200rpx;border-left:none;border-right: none;display: flex;align-items: center;}
+.user-info image{margin-left:50rpx;margin-right:50rpx;width:100rpx; height: 100rpx; border-radius: 10%;overflow: hidden;}
+.user-info text{margin-left: 10rpx; color: whitesmoke;}
+.user-info button{margin:0;margin-left: 10rpx;}
+.score{margin-right:50rpx;position: absolute;
+    right: 20rpx;
+    }
+.score text{text-align: right;}
+.green{color:#73AD21;}
+.red{color:rgb(252, 71, 71);}
+.his{
+  align-items: center;
+  height: 200rpx;width: 80%;background-color: white;
+  margin-left:10%;
+  margin-right:10%;
+  border-radius: 5%;
+  display: flex;
+}
+.hisL{
+  width: 50%;
+}
+.hisR{
+  width: 50%
+}
+.icons{margin-left:50rpx;width:50rpx; height: 50rpx; border-radius: 10%;overflow: hidden;}
+.grey{
+  width: 100%;
+  color:#737373;
+  font-size: 30rpx;
+  margin-top:30rpx;
+  margin-bottom:30rpx;
+}
+.black{
+  width: 100%
+}
+.blue{
+  color:#1296db;
+  font-size: 30rpx;
+}
+.block{margin-top: 15rpx;}
+.func{height:100%;margin-top: 15rpx;background-color :rgb(247, 244, 244)}
+.user{
+  background-color :rgb(247, 244, 244);
+}
+.blank{background-color :rgb(247, 244, 244);height: 1000rpx;}

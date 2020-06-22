@@ -1,0 +1,30 @@
+/* pages/adminHome/adminHome.wxss */
+page{
+  height: 100%;
+}
+.user-info{height: 200rpx;border:1px black solid;border-left:none;border-right: none;display: flex;align-items: center;background-color:white;}
+.user-info image{width:100rpx; height: 100rpx; border-radius: 50%;overflow: hidden;}
+.user-info text{margin-left: 10rpx; }
+.user-info button{margin:0;margin-left: 10rpx;}
+.score{position: absolute;
+    right: 20rpx;
+    }
+.score text{text-align: right;}
+.green{color:#73AD21;}
+.red{color:rgb(252, 71, 71);}
+
+.block{margin-top: 15rpx;}
+.func{height:100%;margin-top: 15rpx;background-color :rgb(247, 244, 244)}
+.user{
+  background-color :rgb(247, 244, 244);
+}
+.blank{background-color :rgb(247, 244, 244);height: 1000rpx;}
+.bottom{
+  position:fixed; bottom:0;width: 100%;
+}
+van-grid-item{
+  width:5%;
+}
+.act{
+  background-color: red;
+}

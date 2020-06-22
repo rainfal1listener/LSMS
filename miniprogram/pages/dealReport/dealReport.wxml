@@ -1,0 +1,58 @@
+<!--pages/dealReport/dealReport.wxml-->
+<van-cell title="是否只显示当天">
+  <van-switch checked="{{ isToday }}" size="24px" bind:change="onChangex" />
+</van-cell>
+
+<van-cell-group wx:for="{{reportRecord}}" bindlongtap="deal"  data-reportid="{{item._id}}">
+  <van-cell title="{{item.room+item.seat}}" value="{{item.date+' '+item.time}}" label="{{item.note}}" border="{{ false }}" />
+</van-cell-group>
+
+<van-dialog id="van-dialog" />
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item>
+    <image
+      slot="icon"
+      src="/images/admin/room.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    <image
+      slot="icon-active"
+      src="/images/admin/room_active.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    阅览室管理
+  </van-tabbar-item>
+  <van-tabbar-item >
+    <image
+      slot="icon"
+      src="/images/admin/user.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    <image
+      slot="icon-active"
+      src="/images/admin/user_active.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    用户管理
+  </van-tabbar-item>
+  <van-tabbar-item info="{{undealReportNum}}">
+    <image
+      slot="icon"
+      src="/images/admin/report_active.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    <image
+      slot="icon-active"
+      src="/images/admin/report_active.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    举报处理
+  </van-tabbar-item>
+</van-tabbar>
+

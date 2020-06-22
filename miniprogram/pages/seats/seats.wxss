@@ -1,0 +1,44 @@
+/* pages/seats/seats.wxss */
+.seatStatusList{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.seat{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 50rpx;
+  
+}
+.table{
+  width: 170rpx;
+  height: 50rpx;
+  border:1px solid #6ecb9f; 
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}
+.seatList{
+  display: flex;
+  flex-wrap: wrap;
+  width:90%;
+  margin-left: -10rpx;
+}
+.block{
+  width: 20rpx;
+  height: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top:40prx;
+  margin-bottom: 40rpx;
+  
+  
+}
+ .msg{color:#6ecb9f; font-size: 100%;text-align: center;margin-bottom: 50rpx;}
+.bottom{position:fixed; bottom:0;width:100%;display:flex;}
+.snum{color:#6ecb9f; font-size: 100%;text-align:center;width:50%;margin-top: 20rpx;}
+/* .button{width:50%;text-align: right;} */
+.selected{  width: 50rpx;
+  height: 50rpx;
+  margin-left: 50rpx;
+  border:1px solid #6ecb9f;}

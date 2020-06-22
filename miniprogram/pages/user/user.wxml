@@ -1,0 +1,65 @@
+<!--miniprogram/pages/user/user.wxml-->
+
+
+
+
+  <view class="user-info">
+    <image  class='tx' src="{{userPhoto}}" wx:if="{{isLogin}}"></image>
+    <text wx:if="{{isLogin}}" class="name"> {{nickName}}</text>
+    
+    
+    <view class="score">
+      <view wx:if="{{isLogin}}"><text>信用分：<text class="{{cScore>=80?'green':'red'}}">{{cScore}}</text></text></view>
+    </view>
+    <view class="btnV"><button   wx:if="{{!isLogin}}" open-type="getUserInfo" bindgetuserinfo="login_confirm" class="btn">一键登录</button></view>
+  </view>
+
+    <view class="block">
+  <van-cell   title="我的足迹" link-type="navigateTo" url="/pages/seachHistory/seachHistory"  label="查看您的在图书馆学习的时光" >
+  <view slot="title">
+    <view class="van-cell-text">我的足迹</view>
+  </view>
+  <image class="icons" src="/images/user/历史(1).png"></image>
+</van-cell>
+</view>
+<view class="block">
+  <van-cell    title="举报" link-type="navigateTo" url="/pages/report/report"  label="发现违规，请向管理员举报" >
+  <view slot="title">
+    <view class="van-cell-text">举报</view>
+  </view>
+  <image class="icons" src="/images/user/举报.png"></image>
+</van-cell>
+</view>
+<view class="block">
+<van-cell    link-type="navigateTo" url="/pages/adminLogin/adminLogin"   >
+  <view slot="title">
+    <view class="van-cell-text">管理员入口</view>
+  </view>
+  <image class="icons" src="/images/user/管理员.png"></image>
+</van-cell>
+</view>
+
+
+
+
+  <van-dialog id="van-dialog" />
+  <van-toast id="van-toast" />
+  
+
+  <!-- <view class="func">
+    <view class="block">
+      <van-cell is-link title="我的足迹" link-type="navigateTo" url="/pages/seachHistory/seachHistory" />
+    </view>
+
+    <view class="block">
+      <van-cell is-link title="举报" link-type="navigateTo" url="/pages/report/report"/>
+    </view>
+
+    <view class="block">
+      <van-cell is-link title="管理员入口" link-type="navigateTo" url="/pages/adminLogin/adminLogin"/>
+    </view>
+
+    <view class="blank"></view>
+  </view>-->
+
+

@@ -1,0 +1,71 @@
+<!--pages/userManage/userManage.wxml-->
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索用户名"
+  use-action-slot
+   shape="round"
+  background="linear-gradient(to right, #4bb0ff, #6149f6)"
+  bind:change="onSearch"
+  bind:search="onSearch"
+>
+  
+</van-search>
+<van-dialog id="van-dialog" />
+
+<view class="user" bindlongtap="banOrDisban" bindtap="click" wx:for="{{user}}" data-chooseuser="{{item.nickName}}" data-chooseuserid="{{item._id}}">
+  <view class="left">{{item.nickName}}</view><view class="mid"></view><view class="right">信用分：<van-stepper  value="{{ item.cScore }}"
+   disabled="{{item._id!=chooseUserId}}"  min="0" max="100" bind:change="onChangeScore"/>
+  </view>
+</view>
+
+<van-tabbar active="{{ active }}" bind:change="onChange">
+  <van-tabbar-item>
+    <image
+      slot="icon"
+      src="/images/admin/room.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    <image
+      slot="icon-active"
+      src="/images/admin/room_active.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    阅览室管理
+  </van-tabbar-item>
+  <van-tabbar-item >
+    <image
+      slot="icon"
+      src="/images/admin/user_active.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    <image
+      slot="icon-active"
+      src="/images/admin/user_active.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    用户管理
+  </van-tabbar-item>
+  <van-tabbar-item info="{{undealReportNum}}">
+    <image
+      slot="icon"
+      src="/images/admin/report.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    <image
+      slot="icon-active"
+      src="/images/admin/report_active.png"
+      mode="aspectFit"
+      style="width: 40px; height: 28px;"
+    />
+    举报处理
+  </van-tabbar-item>
+</van-tabbar>
+
+
+
+

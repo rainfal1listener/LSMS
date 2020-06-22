@@ -1,0 +1,9 @@
+/* pages/adminLogin/adminLogin.wxss */
+.main{
+  display: flex;
+  margin-top: 400rpx;
+}
+.right{
+  display: inline-block;
+  width: 50%;
+}

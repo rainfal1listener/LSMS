@@ -1,0 +1,147 @@
+<!--pages/home/home.wxml-->
+
+<!-- 灰色：color="#737373" -- 浅灰： color="#bcbcbc" 深绿：color="#26c789"  -->
+<!---------------------------未登录页面---------------------------------->
+<view class="main"  wx:if = "{{isLogin==false}}">
+  <text class="title">
+  Hi,
+  </text>
+
+  <text class="messageTop">
+  您还没有登录哦
+  </text>
+
+  <van-divider />
+
+  <button bindtap="login_btn" class="btn1">一键登录</button>
+</view>
+
+
+<!---------------------------未选座页面---------------------------------->
+<view class="main"  wx:elif = "{{isOrder==false}}">
+  <text class="title">
+  Hi,
+  </text>
+
+  <view class="messageTop">
+  您今天还没有选座哦~
+  </view>
+
+  <text class="tip1">
+
+  </text>
+
+  <van-divider />
+  
+  <view class="messageBottom">
+  已有<text class="studyNum">{{studyNum}}</text>人已经开始今日学习
+  </view>
+  <button bindtap="order_btn" class="btn1" style="width:250rpx">选座/订座</button>
+  <van-dialog id="van-dialog" />
+</view>
+
+<!---------------------------未签到页面---------------------------------->
+<view class="main"  wx:elif = "{{isSign==false}}"  style="margin-top:50rpx;">
+  <text class="room">
+  {{orderRoom}} {{orderSeatNum}}号
+  </text>
+
+  <view class="time">
+  {{orderTime}}
+  </view>
+
+  <view style="line-height: 10px;">
+    <text class="messageTop"  bindtap="cScoreTip" style="font-size:28rpx;">
+    请在这个时间之内扫码签到\n
+    以免失去座位并扣除<text class="cScoreIfom" >信用分</text>哦~
+    </text>
+  </view>
+  
+  <text class="tip1">
+
+  </text>
+
+  <van-divider />
+  
+  <view class="messageBottom">
+
+  </view>
+  <button bindtap="sign_btn" class="btn1" style="width:250rpx" >扫码签到</button>
+  <view bindtap="cancel_btn" class="btn2"><text>释放座位</text></view>
+  <van-toast id="van-toast" />
+
+  <!-- 信用分介绍弹出框 -->
+  <van-dialog id="van-dialog" />
+
+
+
+  <van-toast id="van-toast" />
+</view>
+
+<!---------------------------暂离页面---------------------------------->
+<view class="main"  wx:elif = "{{isLeave==true}}" style="margin-top:50rpx;">
+  <text class="room">
+  {{orderRoom}} {{orderSeatNum}}号
+  </text>
+
+
+
+  <van-count-down time="{{ time }}" />
+  
+
+
+  <view style="line-height: 10px;">
+    <text class="messageTop"  bindtap="cScoreTip" style="font-size:28rpx;">
+    请在倒计时结束前回座位签到\n
+    以免失去座位并扣除<text class="cScoreIfom" >信用分</text>哦~
+    </text>
+  </view>
+  
+  <text class="tip1">
+
+  </text>
+
+  <van-divider />
+  
+  <view class="messageBottom">
+
+  </view>
+  <button bindtap="leaveSign_btn" class="btn1" style="width:250rpx" >暂离签到</button>
+  <view bindtap="cancel_btn" class="btn2"><text>释放座位</text></view>
+
+  <!-- 信用分介绍弹出框 -->
+  <van-dialog id="van-dialog" />
+   <van-toast id="van-toast" />
+</view>
+
+<!---------------------------就坐页面---------------------------------->
+<view class="main" wx:elif = "{{isSign==true}}"  style="margin-top:50rpx;">
+  <text class="room">
+  {{orderRoom}} {{orderSeatNum}}号
+  </text>
+
+
+  <view class="time">{{hour}}:{{minute}}:{{second}}</view>
+
+
+  <view style="line-height: 10px;">
+    <text class="messageTop"  bindtap="cScoreTip" style="font-size:28rpx;">
+    学习的痛苦是暂时的，未学到的痛苦是终身的。\n
+    图书馆理有你珍贵的学习时光。
+    </text>
+  </view>
+  
+  <text class="tip1">
+
+  </text>
+
+  <van-divider />
+  
+  <view class="messageBottom">
+
+  </view>
+  <button bindtap="finish_btn" class="btn1" style="width:250rpx" >离馆退座</button>
+  <view bindtap="leave_btn" class="btn2"><text>暂离</text></view>
+ 
+</view>
+

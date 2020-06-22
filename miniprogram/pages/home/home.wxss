@@ -1,0 +1,27 @@
+/* pages/home/home.wxss */
+page{
+  height: 100%;
+
+  
+}
+.main{text-align: center;height: 100%;}
+.title{color:#6ecb9f; font-size: 400%;}
+.btn1{background-color:#6ecb9f;color:white;border-radius: 20px;width: 20px;font-size: 30rpx;}
+.btn2{margin-top: 45rpx;}
+.btn2 text{color:#bcbcbc;}
+.studyNum{color:#6ecb9f;}
+.messageTop{margin-top:0rpx;margin-bottom: 60rpx;color:#737373;}
+.messageBottom{margin-top:40rpx;margin-bottom: 50rpx;color:#737373}
+.cScoreIfom{color:#6ecb9f;text-decoration-line: underline;}
+
+.room{color:#737373;}
+.time{color:#737373;font-size: 100rpx;margin-top:30rpx;margin-bottom: 30rpx;}
+.studyTime{color:#737373;font-size: 100rpx;margin-top:30rpx;margin-bottom: 30rpx;}
+
+
+/* .main{text-align: center;}
+.title{color:#26c789; font-size: 400%;}
+.btn1{background-color:#26c789;color:white;border-radius: 20px;width: 20px;font-size: 30rpx;}
+.studyNum{color:#26c789;}
+.messageTop{margin-top:0rpx;margin-bottom: 60rpx;color:}
+.messageBottom{margin-top:40rpx;margin-bottom: 50rpx;} */
