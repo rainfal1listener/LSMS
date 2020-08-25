@@ -1,0 +1,38 @@
+<RCC>
+  <qresource prefix="1">
+    <file>bgi/a64b7202608258596167a0d874e773ba.png</file>
+    <file>bgi/ooopic_1530610273.png</file>
+    <file>bgi/logout.png</file>
+    <file>bgi/logout256.png</file>
+    <file>bgi/ooopic_1530608442.png</file>
+    <file>bgi/ooopic_1530608591.png</file>
+    <file>bgi/ooopic_1530608765.png</file>
+    <file>bgi/ooopic_1530608881.png</file>
+    <file>bgi/ooopic_1530608994.png</file>
+    <file>bgi/ooopic_1530609061.png</file>
+    <file>bgi/ooopic_1530609094.png</file>
+    <file>bgi/ooopic_1530609109.png</file>
+    <file>bgi/500004702.jpg</file>
+    <file>bgi/58b68cb323881.jpg</file>
+    <file>bgi/54ffec97bc0aabc8537df856d5b175bf.jpg</file>
+    <file>bgi/899fa01e5d731610397b1f488fe5258a.jpg</file>
+    <file>bgi/6617abefe9ee33a6226f67428bbfc738.jpg</file>
+    <file>bgi/88688b1e6d0cd27358911e4fb0ebc582.jpg</file>
+    <file>bgi/baad60039b7e67da19ae5bf72a9eaef6.jpg</file>
+    <file>bgi/ejd9qAok9P.jpg</file>
+    <file>bgi/registBackground.png</file>
+    <file>bgi/Day2_Cinema Ticket.jpg</file>
+    <file>bgi/16f6f15d759e1ee10f14204a4208803f.jpg</file>
+    <file>bgi/52ce29b56e12acfba663df7a5514a862.jpg</file>
+    <file>bgi/57a90ce5535d3dc054093e6a01d6f501.jpg</file>
+    <file>bgi/738ef63ec0d08b2f2b6f00ebe0f1c7c0.jpg</file>
+    <file>bgi/6443e6962f546759a6b5a19b44aa7318.jpg</file>
+    <file>bgi/ad5e8f671df838905df185cdbcec46c3.jpg</file>
+    <file>bgi/b0dba0b672097b440aacc2ab41a52db8.jpg</file>
+    <file>bgi/ce538520ca74022656380b89220c1f2a.jpg</file>
+    <file>bgi/d04fb46712c22be6178e80330b2daff5.jpeg</file>
+    <file>bgi/e367f5766adbac3e9eaed0067844e7a2.jpg</file>
+    <file>bgi/gb_login.jpg</file>
+    <file>bgi/loginBackground.jpg</file>
+  </qresource>
+</RCC>
